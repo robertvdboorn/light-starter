@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "run-s uniform:manifest next:build",
+    "next:build": "next build",
     "start": "next start",
     "lint": "next lint",
     "uniform:pull": "uniform sync pull",
-    "uniform:push": "uniform sync push"
+    "uniform:push": "uniform sync push",
+    "uniform:manifest": "uniform context manifest download --output ./src/uniformContext/contextManifest.json",
+    "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -46,6 +49,7 @@
     "@uniformdev/cli": "^20.49.4",
     "eslint": "^9.39.2",
     "eslint-config-next": "15.5.12",
+    "npm-run-all": "^4.1.5",
     "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3"
   }
