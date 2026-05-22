@@ -1,0 +1,27 @@
+created: '2026-05-22T10:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: 5789cd57-ca74-430a-a240-8f5f042e820b
+  _name: Do I need a new route file for every page?
+  _slug: do-i-need-a-new-route-file-for-every-page
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: Do I need a new route file for every page?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          No. `src/pages/[[...slug]].tsx` is a catch-all route that resolves any
+          URL to a Uniform composition via `withUniformGetServerSideProps`.
+          Authors create pages in Canvas and map them in the Project Map — no
+          code change needed. Add a dedicated route file only when you need
+          logic that runs outside of Uniform's composition pipeline, such as a
+          custom API endpoint or an entirely separate rendering path.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

@@ -1,0 +1,26 @@
+created: '2026-05-22T10:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: b1c6544b-91ac-44af-b838-1ac4fcac8f17
+  _name: What environment variables do I need?
+  _slug: what-environment-variables-do-i-need
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: What environment variables do I need?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          UNIFORM_API_KEY and UNIFORM_PROJECT_ID connect the app to your Uniform
+          project. UNIFORM_PREVIEW_SECRET secures the `/api/preview` route so
+          authors can preview draft compositions from Canvas. Copy
+          `.env.example` to `.env` and fill in values from your Uniform project
+          settings.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

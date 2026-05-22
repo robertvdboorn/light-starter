@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqItem
+name: FAQ Item
+icon: help-circle
+parameters:
+  - id: question
+    name: Question
+    type: text
+    guidance: The question shown in the accordion header
+    localizable: true
+  - id: answer
+    name: Answer
+    type: text
+    guidance: The answer revealed when the item is expanded
+    typeConfig:
+      multiline: true
+    localizable: true
+categoryId: f131d88f-05d5-4b45-ac10-22456aebedb2
+description: A single expandable FAQ question and answer
+previewImageUrl: https://i.imgur.com/Ky5YjUI.png
+useTeamPermissions: true
+slots: []
+titleParameter: question
+canBeComposition: false
+created: '2026-05-22T10:38:43.53959+00:00'
+updated: '2026-05-22T10:53:58.00169+00:00'

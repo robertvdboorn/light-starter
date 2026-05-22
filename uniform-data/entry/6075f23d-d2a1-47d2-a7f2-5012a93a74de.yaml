@@ -1,0 +1,27 @@
+created: '2026-05-22T10:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: 6075f23d-d2a1-47d2-a7f2-5012a93a74de
+  _name: How do I add a new component?
+  _slug: how-do-i-add-a-new-component
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: How do I add a new component?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          Create the React component in `src/components/`, call
+          `registerUniformComponent`, add a YAML definition under
+          `uniform-data/component/`, export it from `src/components/index.ts`,
+          allow it in any relevant slot definitions, then run
+          `npx uniform sync push` to publish the definition to your Uniform
+          project.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

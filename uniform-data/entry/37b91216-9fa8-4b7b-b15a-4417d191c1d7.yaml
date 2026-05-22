@@ -1,0 +1,27 @@
+created: '2026-05-22T12:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: 37b91216-9fa8-4b7b-b15a-4417d191c1d7
+  _name: How do I change the brand colors?
+  _slug: how-do-i-change-the-brand-colors
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: How do I change the brand colors?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          Edit the three CSS variables in `src/styles/globals.css` under the
+          "CUSTOMIZABLE BRAND COLORS" section: `--accent-hue` (0–360),
+          `--accent-saturation`, and `--accent-lightness`. The primary blue
+          button color is controlled separately by `--ui-primary`. All
+          components consume these variables via Tailwind's theme tokens, so a
+          single change propagates across the entire site.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

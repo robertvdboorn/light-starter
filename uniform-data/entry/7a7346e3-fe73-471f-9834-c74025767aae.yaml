@@ -1,0 +1,28 @@
+created: '2026-05-22T12:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: 7a7346e3-fe73-471f-9834-c74025767aae
+  _name: What is a component pattern?
+  _slug: what-is-a-component-pattern
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: What is a component pattern?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          A component pattern is a reusable, pre-configured instance of a
+          component (or a tree of components) stored in Uniform and available to
+          authors across multiple compositions. Patterns are defined as YAML
+          files under `uniform-data/componentPattern/` with `pattern: true`.
+          When an author inserts a pattern, changes to the pattern propagate to
+          every composition that uses it — making them ideal for shared headers,
+          footers, and data-driven sections like the FAQ Section Pattern.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

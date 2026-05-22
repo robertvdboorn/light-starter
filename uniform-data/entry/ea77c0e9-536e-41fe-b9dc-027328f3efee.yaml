@@ -1,0 +1,27 @@
+created: '2026-05-22T10:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: ea77c0e9-536e-41fe-b9dc-027328f3efee
+  _name: What is Uniform Canvas?
+  _slug: what-is-uniform-canvas
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: What is Uniform Canvas?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          Uniform Canvas is the visual editing environment where content authors
+          compose pages from registered React components. Authors drag components
+          into slots, edit text inline, and publish without deploys for most
+          content updates. This starter maps every URL through
+          `src/pages/[[...slug]].tsx`, which fetches the matching composition
+          from Uniform at request time.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

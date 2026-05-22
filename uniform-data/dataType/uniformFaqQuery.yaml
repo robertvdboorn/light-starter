@@ -1,0 +1,38 @@
+id: uniformFaqQuery
+displayName: Uniform FAQ Query
+ttl: 30
+path: /query
+custom:
+  maxDepth: 3
+  proposedName: Query FAQ
+  allowedOrderBy:
+    - name_ASC
+    - name_DESC
+    - updated_at_DESC
+    - updated_at_ASC
+    - created_at_DESC
+    - created_at_ASC
+  includeTotalCount: true
+  allowedContentTypes:
+    - faq
+method: GET
+purgeKey: 7f3a9c2e-1b4d-4e8a-9f6c-2d8e5a1b0c73
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

@@ -1,0 +1,70 @@
+composition:
+  _name: FAQ Section Pattern
+  _id: eab5925d-7d94-40f1-a166-593439e2804e
+  type: faqSection
+  parameters:
+    heading:
+      type: text
+      locales:
+        en-US: Frequently Asked Questions
+    description:
+      type: text
+      locales:
+        en-US: >-
+          Find answers to common questions about this Uniform Next.js starter
+          project.
+  slots:
+    items:
+      - _id: c3db7ba5-5f94-4d34-86f1-df211873e28c
+        type: $loop
+        slots:
+          body:
+            - _id: df7dbdf8-5d0e-4743-8732-790d4f5b22f4
+              type: faqItem
+              parameters:
+                answer:
+                  type: text
+                  locales:
+                    en-US: >-
+                      ${#jptr:/FAQ Query Content entries Loop
+                      Item/entry/fields/answer/value}
+                question:
+                  type: text
+                  locales:
+                    en-US: >-
+                      ${#jptr:/FAQ Query Content entries Loop
+                      Item/entry/fields/question/value}
+              _overridability:
+                hideLockedParameters: true
+        _dataResources:
+          FAQ Query Content entries Loop Item:
+            type: sys-reserved-loop
+            variables:
+              connectedData: '#jptr:/FAQ Query Content/entries:fa=c'
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    FAQ Query Content:
+      type: uniformFaqQuery
+      variables:
+        limit: '20'
+        locale: ${locale}
+        search: ''
+        filters: '{"type[eq]":"faq"}'
+        orderBy: fields.question_ASC
+        uiFilters: '[{"field":"type","operator":"eq","value":"faq"}]'
+        contentTypes: faq
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      heading: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2026-05-22T10:39:55.669048+00:00'
+modified: '2026-05-22T10:54:33.437171+00:00'
+pattern: true
+categoryId: f131d88f-05d5-4b45-ac10-22456aebedb2

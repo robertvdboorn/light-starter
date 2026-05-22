@@ -1,0 +1,27 @@
+created: '2026-05-22T12:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: c9177c89-efff-4608-86b6-f56c0d8ca013
+  _name: What is a UniformSlot and how does it work?
+  _slug: what-is-a-uniform-slot
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: What is a UniformSlot and how does it work?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          A UniformSlot is a named area inside a component where content authors
+          can drop child components in Canvas. In code you render
+          `<UniformSlot name="slotName" />` and in the component YAML you
+          declare the slot with an `allowedComponents` list. Authors see the
+          slot as a droppable area in the visual editor and can add, reorder, or
+          remove components without touching code.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

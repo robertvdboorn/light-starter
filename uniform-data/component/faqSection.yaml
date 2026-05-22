@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqSection
+name: FAQ Section
+icon: help-circle
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Main section heading displayed beside the accordion
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Supporting text below the heading
+    typeConfig:
+      multiline: true
+    localizable: true
+categoryId: f131d88f-05d5-4b45-ac10-22456aebedb2
+description: Two-column FAQ section with an expandable accordion
+previewImageUrl: https://i.imgur.com/feCCdoE.png
+useTeamPermissions: true
+slots:
+  - id: items
+    name: FAQ Items
+    allowedComponents:
+      - faqItem
+      - $loop
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: heading
+canBeComposition: false
+created: '2026-05-22T10:38:45.024391+00:00'
+updated: '2026-05-22T10:53:49.544811+00:00'

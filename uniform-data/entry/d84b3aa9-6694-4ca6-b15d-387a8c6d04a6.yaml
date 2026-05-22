@@ -1,0 +1,25 @@
+created: '2026-05-22T10:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: d84b3aa9-6694-4ca6-b15d-387a8c6d04a6
+  _name: How does preview mode work?
+  _slug: how-does-preview-mode-work
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: How does preview mode work?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          When an author clicks Preview in Canvas, Uniform calls `/api/preview`,
+          which validates UNIFORM_PREVIEW_SECRET and enables Next.js preview
+          mode. The catch-all route then requests draft compositions instead of
+          published ones, so unpublished changes are visible before going live.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

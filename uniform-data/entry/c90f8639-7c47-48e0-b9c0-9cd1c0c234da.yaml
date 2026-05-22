@@ -1,0 +1,28 @@
+created: '2026-05-22T12:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: c90f8639-7c47-48e0-b9c0-9cd1c0c234da
+  _name: How does the device-type personalization work?
+  _slug: how-does-device-type-personalization-work
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: How does the device-type personalization work?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          The `useSetViewportQuirk` hook fires on mount and on every window
+          resize, reads `window.innerWidth`, and calls
+          `context.update({ quirks: { deviceType } })` with "m" (mobile,
+          <640px), "t" (tablet, 640–1023px), or "d" (desktop, >=1024px). In
+          Canvas you can then create visibility rules on any component keyed to
+          the `deviceType` quirk, showing or hiding components based on the
+          visitor's actual screen width.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true

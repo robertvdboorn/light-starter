@@ -1,0 +1,28 @@
+created: '2026-05-22T12:00:00+00:00'
+modified: '2026-05-22T12:00:00+00:00'
+pattern: false
+entry:
+  _id: 30e93d69-9559-4a95-a371-16b9e19a5b11
+  _name: What is a $loop and when do I use it?
+  _slug: what-is-a-loop-and-when-do-i-use-it
+  type: faq
+  fields:
+    question:
+      type: text
+      locales:
+        en-US: What is a $loop and when do I use it?
+    answer:
+      type: text
+      locales:
+        en-US: >-
+          A $loop is a special Uniform component that iterates over a data
+          resource and renders a child component once per item. Connect it to a
+          data type via the pattern's _dataResources, then bind child parameters
+          to entry fields using JSON pointer expressions — for example pointing
+          at /My Query/entries Loop Item/entry/fields/title/value. Use it any
+          time you want a slot populated dynamically from content entries rather
+          than manually placed components.
+  _locales:
+    - en-US
+  _overridability:
+    hideLockedParameters: true
